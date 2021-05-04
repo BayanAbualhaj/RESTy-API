@@ -18,7 +18,7 @@ function Form({ prompt, handler }) {
             let response={
                 count:data.count,
                 headers:{Content_Type:raw.headers.get('Content-Type')},
-                results:data.results,
+                results:data,
             };
 
             handler(response)
@@ -34,7 +34,7 @@ function Form({ prompt, handler }) {
             </label>
             <button type="submit">{prompt}</button>
             <br />
-            <input type='radio' id='GET' name='method' value='GET' defaultChecked />
+            <input type='radio' id='GET' name='method' value='GET' defaultChecked/>
             <label htmlFor='GET' >GET</label>
             <input type='radio' id='POST' name='method' value='POST' />
             <label htmlFor='POST'>POST</label>

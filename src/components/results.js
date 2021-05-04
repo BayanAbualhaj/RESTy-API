@@ -1,17 +1,16 @@
 'use strict';
 
-import ReactJson from 'react-json-view';
+import JSONPretty from 'react-json-pretty';
 import './results.scss';
+// var JSONPrettyMon = require('react-json-pretty/dist/monikai');
 
 function Results(props) {
     return (
         <div id="results">
-            <ReactJson name={false} src={props} theme="rjv-default" />
+            <JSONPretty id="json-pretty" data={props}></JSONPretty>
         </div>
 
     )
-
-
 }
 
 export default Results;
