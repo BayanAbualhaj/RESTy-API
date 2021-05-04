@@ -73,7 +73,7 @@ ___________________
 
 ## deployments:
 
-[link]()
+[link](https://60914471c4d0de00084a7617--restyapi.netlify.app/)
 ________________________
 
 ## UML:
@@ -87,3 +87,9 @@ _________________
 * class02:
 
 ![](./assets/UML2.png)
+
+_______________________
+
+* class03:
+
+![](./assets/UML3.png)
