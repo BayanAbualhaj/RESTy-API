@@ -1,0 +1,49 @@
+
+  main {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    #container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      form {
+        #inputs{
+          input,label,button{
+            display:inline-block;
+        }
+        input{
+            width:70%;
+    
+          }
+          button{
+            cursor: pointer;
+          }
+        }
+  
+        #methods {
+            label{
+                background: rgba(128, 128, 128, 0.336);
+                margin: 10px;
+                border: gray solid 1px;
+                padding: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+            input[type="radio"]{
+              visibility:hidden;
+          }
+            input[type="radio"]:checked + label{
+              background: none;
+          }
+        }
+        textarea{
+          margin-top: 25px;
+          width: 95%;
+          overflow-x:hidden;
+        }
+      }
+    }
+  }
