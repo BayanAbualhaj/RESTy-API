@@ -1,4 +1,6 @@
 import './header.scss';
+import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const Header=()=>{
     return(
@@ -6,6 +8,25 @@ const Header=()=>{
             <h1>
                 RESTy
             </h1>
+            <nav>
+                <ul>
+                    <li> 
+                        <NavLink exact to="/">
+                            Home
+                        </NavLink>
+                    </li>
+                    <li> 
+                        <NavLink to="/history">
+                            History
+                        </NavLink>
+                    </li>
+                    <li> 
+                        <NavLink to="/help">
+                            Help
+                        </NavLink>
+                    </li>
+                </ul>
+            </nav>
         </header>
     );
 }
