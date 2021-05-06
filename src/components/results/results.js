@@ -5,6 +5,7 @@ import { If, Else, Then } from '../if/if'
 // var JSONPrettyMon = require('react-json-pretty/dist/monikai');
 
 function Results({character,loading}) {
+    console.log('*****',character);
     return (
 
         <div id="results">
@@ -15,7 +16,16 @@ function Results({character,loading}) {
                     </div>
                 </Then>
                 <Else>
-                    <JSONPretty id="json-pretty" data={character}></JSONPretty>
+                    <If condition={character.results.length|| character.results.results}>
+                        <Then>
+                            <JSONPretty id="json-pretty" data={character}></JSONPretty>
+                        </Then>
+                        <Else>
+                            <div>
+                                there is nothing to show
+                            </div>
+                        </Else>
+                    </If>
                 </Else>
             </If>
         </div>

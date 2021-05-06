@@ -6,21 +6,24 @@ const History=({storage,callBack})=>{
         callBack({method,url})
     }
     return(
-        <If condition={storage}>
-            <Then>
-                {
-                    storage.map((data,index)=>{
+        <div id="banana">
 
-                        return(
-                            <div key={index} onClick={handleClick}>
-                                <p>{data.method} {data.url}
-                                </p>
-                            </div>
-                        )
-                    })
-                }
-            </Then>
-        </If>
+            <If condition={storage}>
+                <Then>
+                    {
+                        storage.map((data,index)=>{
+
+                            return(
+                                <div key={index} onClick={handleClick}>
+                                    <p>{data.method} {data.url}
+                                    </p>
+                                </div>
+                            )
+                        })
+                    }
+                </Then>
+            </If>
+        </div>
     
     )
 }

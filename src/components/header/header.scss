@@ -5,4 +5,29 @@ header{
     margin: 0;
     margin-bottom: 2%;
     padding: 1%;
+    height: 180px;
+
+    ul{
+        list-style: none;
+        li{
+            background-color: #363636;
+            display: inline-block;
+            text-align: center;
+            width: 30px;
+            padding: 2%;
+            margin: 1%;
+            margin-left: 0;
+
+            a{
+                text-decoration: none;
+                color: inherit;
+
+            }
+        }
+        li:hover{
+            font-size: x-large;
+            background-color: #36363662;
+        }
+
+    }
 }
